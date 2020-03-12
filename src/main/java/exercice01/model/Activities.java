@@ -1,11 +1,11 @@
 package exercice01.model;
 
 import java.util.ArrayList;
-
+/*
 public class Activities{
     private int id;
     private String name;
-    private ArrayList<Student> students;
+    private ArrayList<Cadastrar> cadastrar;
 
     // GET AND SETTERS
     public int getId() {
@@ -24,13 +24,15 @@ public class Activities{
         this.name = name;
     }
 
-    public ArrayList<Student> getStudents() {
-        return this.students;
+    public ArrayList<Cadastrar> getCadastrar() {
+        return this.cadastrar;
     }
 
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
+    public void setCadastrar(ArrayList<Cadastrar> cadastrar) {
+        this.cadastrar = cadastrar;
     }
 
 
 }
+A classe foi direcionada a uma nova classe
+*/

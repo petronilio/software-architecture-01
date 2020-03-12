@@ -4,7 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-import exercice01.model.Student;
+//import exercice01.model.Student;
+import exercice01.model.Cadastrar;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -17,7 +18,8 @@ public class Screen implements ActionListener{
   public JTextField cx1 = new JTextField(25);
   public JButton bt1 = new JButton("Cadastrar");
   public JButton bt2 = new JButton("Imprimir");
-  private ArrayList<Student> students = new ArrayList<>();
+  //private ArrayList<Student> students = new ArrayList<>();
+  private ArrayList<Cadastrar> cadastrar = new ArrayList<>();
 
   public Screen(){
 
@@ -43,15 +45,28 @@ public class Screen implements ActionListener{
 
   public void actionPerformed(ActionEvent ae){
     if (ae.getSource().equals(bt1)) {
-        students.add(new Student(cx1.getText()));
+        cadastrar.add(new Cadastrar(cx1.getText()));
+        //students.add(new Student(cx1.getText()));
     }
 
     if (ae.getSource().equals(bt2)) {
-        for(int i = 0; i < students.size(); i++){
+        /*for(int i = 0; i < students.size(); i++){
             System.out.println(students.get(i).getName());
+        }*/
+        for(int i = 0; i < cadastrar.size(); i++){
+            System.out.println(cadastrar.get(i).getName());
         }
     }
 
    }
+  public void nome() {
+      
+      Cadastrar cadastrar
+      cadastrar = new Cadastrar();
+  }
+
+
+
 }
+
 

@@ -1,7 +1,7 @@
 package exercice01.model;
 
 import java.util.ArrayList;
-
+/*
 public class Event{
     private int id;
     private String name;
@@ -33,3 +33,5 @@ public class Event{
     }
 
 }
+A classe foi direcionada a uma nova classe
+*/
